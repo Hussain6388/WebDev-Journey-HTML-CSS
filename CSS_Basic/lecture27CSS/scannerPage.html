@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <!-- <link rel="stylesheet" href="./scanner.css"> -->
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: #8BC6EC;
+           background-image: linear-gradient(135deg,#8BC6EC 0%, #9599E2 100%);
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .box{
+            padding: 10px;
+            width: 360px;
+            height: 600px;
+            
+            background-color: white;
+            border-radius: 20px;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+        }
+        img{
+            padding: 5px;
+            height: 400px;
+            width : 345px;
+             border-radius: 20px;
+            
+        }
+        .box h2{
+            font-weight: bold;
+            font-size: 1.9rem;
+        }
+        .box p{
+            font-size: 1.15em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="image">
+
+                <img src="./PHOTO-2025-08-28-12-54-04.jpg" alt="Scanner">
+            </div>
+
+            <div class="heading">
+                <h2>Improve your front end skills by byilding projects</h2>
+            </div>
+
+            <div class="paragraph">
+                <p>Scan the QR Code ot visit Front End mentor and take your coding skill to next level</p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

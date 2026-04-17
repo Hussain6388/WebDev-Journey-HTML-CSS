@@ -1,0 +1,29 @@
+.container{
+    height: 1200px;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    background-color: brown;
+    border: black solid 3px;
+   
+    transition: 2s linear ;
+}
+.box:hover{
+    transform: rotate(35deg);
+    transform: scale(2);    /* elsement ko bada chota karna  */
+    /* transform: scale(0.5); */
+    /* transform: rotate(-45deg); */
+    /* transform: skew(-45deg);  */
+    transform: skew(40deg);
+    transform: translate(3px,8px);  /* (-+x,-+y)    */
+    /* transform: translate(3px); */
+}

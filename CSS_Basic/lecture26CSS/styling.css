@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    overflow-x: none;
+    background-color: #e2e5e8;
+    background-image:linear-gradient(98deg, #e2e5e8 0%, #ffffff 100%);
+}
+.navContainer{
+    width: 100vw;
+    /* background-color: rgba(119, 119, 194, 0.84); */
+    background-color: #0093E9;   /* ye line our next line gradiant copy kiye hai color ke liye */
+    background-image: linear-gradient(160deg,#0093E9 0%,#80D0C7 100%);/* ye line */
+    min-height: 80px;
+}
+#naveList{
+    padding: 15px;
+    list-style: none;   /*  unorder list ka jo point aata hai usako hata deta hai*/
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+#navLogo{
+    font-size: 2.5rem;
+    color: azure;
+    
+}
+#navItem{
+    display: flex;
+    gap: 50px;
+    
+}
+a{
+    text-decoration: none; /* ancarTag me under line  ko remove krna */
+    color: azure;
+}
+.footerBox{
+    background-color: #0093E9;
+    background-image:linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    min-height: 40px;
+    text-align: center;
+    padding: 1.5rem;
+    
+}
+.footerBox p{
+    color: azure;
+    font-size: 1.5rem;
+}
+.content{
+    width: 70%;
+    margin: auto;
+    /* border: solid black 1px; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    box-shadow: 1px 1px 30px black;
+    
+}
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    
+}
+#rasgullahImage{
+    width: 300px;
+    
+}
+.rightBox{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear 0s;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 20px;
+    
+    
+}
+.rightBox img{
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    transition: all 0.6s 0s linear;
+   
+  
+}
+.rightBox:hover{
+    transform: scale(1.2);
+}
+
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftBox h2{
+    font-size: 2rem;
+}
+.ingBox{
+    font-size: 1.3rem;
+}
+.recipeBox{
+    font-size: 1.1rem;
+}
+.rightBox .overlay{
+    position: absolute;
+    top : 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(36, 35, 35, 0.707);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    opacity: 0; /* jab ham hovor krenge to ye nhi dikhana chahiye jo box hai*/
+    transition: all 0.3s linear 0s;
+}
+.rightBox:hover .overlay{
+   opacity: 1; /* jab ham hovor krenge to ye dikhana chahiye jo box hai*/
+}
+
+.rightBox .overlay span{
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+

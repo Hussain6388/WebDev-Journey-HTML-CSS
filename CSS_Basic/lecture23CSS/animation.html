@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container{
+            
+            background-color: antiquewhite;
+            height: 1200px;
+            border: solid black 3px;
+        }
+        .box{
+            border: solid green 3px;
+            background-color: rgb(151, 203, 151);
+            border-radius : 10px;
+            margin :10px;
+            height: 50px;
+            width: 150px;
+
+            position: relative;
+            animation-name: rightMovement;  /*  animation ka name */
+            animation-duration: 1s;   /*  animation khatm hone ka time  */
+            animation-iteration-count: infinite;     /* kitne baar movement hoga  */
+            animation-delay: 3s;   /*  kitne der baad animation movement start hoga */
+            /* animation-direction: alternate;   animation ka direction */
+            animation-timing-function: linear; /* animation ka particular position start to end */
+            /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-timing-function: cubic-bezier(1.1,-0.2,0.3,0.4); */
+            animation-fill-mode: forwards;/* ye tb chakega jab iteraion count khatm ho jaye, forward matlab-> last p, backwrd->first position */
+            }
+            @keyframes rightMovement {
+                from{              /*  yaha se start*/
+                    top:0;
+                    left : 0;
+                }
+                to{         /*  animation khatm*/
+                    top:0;
+                    left : 1200px;
+                }
+                
+            }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

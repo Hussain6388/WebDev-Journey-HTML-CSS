@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        div{
+            border: solid red 5px;
+        }
+        img{
+            margin: 10px;
+           
+        }
+
+        /* relative positoning */
+        /* .img1{
+            position: relative;
+            top: 140px;
+            left: 50px;
+            
+        } */
+        
+        /* absolute positioning */
+        .container{
+            position: relative;
+            height: 4000px;
+            background-color: yellow;
+        }
+        /* .img2{
+            position: absolute;
+            top: 200px;
+            
+        } */
+
+        /* fixd positioning */
+        .img4{
+            position: fixed;
+        }
+
+        /* sticky positioning */
+        .img3{
+            position: sticky;
+            top: 40px;
+        }
+        .box{
+            background-color: aquamarine;
+            height: 5000px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <img 
+        class="img1"
+        src="./PHOTO-2025-08-19-15-57-41.jpg" 
+        alt="image 1"
+        width="200px"
+        height="250px"
+        >
+
+         <img 
+         class="img2"
+        src="./PHOTO-2025-08-19-15-59-03.jpg" 
+        alt="image 1"
+        width="200px"
+        height="250px"
+
+        >
+
+         <img 
+         class="img3"
+        src="./PHOTO-2025-08-19-15-59-54.jpg" 
+        alt="image 1"
+        width="200px"
+        height="250px"
+        >
+
+         <img 
+         class="img4"
+        src="./PHOTO-2025-08-19-16-00-39.jpg" 
+        alt="image 1"
+        width="200px"
+        height="250px"
+        >
+
+        
+    </div>
+
+    <div class="box">
+
+    </div>
+
+</body>
+</html>

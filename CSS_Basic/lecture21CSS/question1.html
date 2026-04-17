@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+           
+            display: flex;
+            border: solid 4px green;
+        }
+        #item{
+            margin: 5px;
+            height: 200px;
+            width: 200px;
+        }
+        .box2{
+            
+            height: 200px;
+            width: 200px;
+            margin: 5px;
+        }
+       
+        .item1{
+            background-color: red;
+        }
+        .item2{
+            background-color: green;
+        }
+        .item3{
+                height: 400px;
+                width: 250px;
+                margin: 5px;
+        }
+
+        @media  (max-width : 640px){
+            .container{
+                    flex-direction: column;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="box1">
+            <p class="item1" id="item">Text 1</p>
+            <p class="item2" id="item">Text 2</p>
+        </div>
+        
+        <div class="box2">
+            <img class="item3" src="./PHOTO-2025-08-20-13-52-47.jpg" alt="poster">
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+
+.container{
+    height: 680px;
+    width: 1430px;
+    background-color: rgba(130, 192, 223, 0.346);
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    padding: 10px;
+    width: 290px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+    
+}
+.box img{
+    border-radius: 12px;
+    height: 300px;
+    width: 290px;
+}
