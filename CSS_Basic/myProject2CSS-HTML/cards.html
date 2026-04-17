@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+            height: 100vh;
+            width: 100vw;
+        }
+        .card-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border-radius: 30px;
+            height: 535px;
+            width: 330px;
+        }
+        .cards{
+            height: 505px;
+            width: 300px;
+            background-color: rgb(240, 233, 233);
+            border-radius: 25px;
+        }
+        .top-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.1rem;
+            height: 14%;
+            width: 100%;
+            border-top-right-radius: 25px;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            background: #f013da;
+            background: linear-gradient(180deg,rgba(240, 19, 218, 0.99) 0%, rgba(180, 21, 191, 1) 60%, rgba(144, 9, 189, 1) 100%);
+    
+        }
+        .white-container{
+            height: 18%;
+            width: 50%;
+            border-bottom-left-radius:13px;
+            border-bottom-right-radius:13px;
+            background-color: white;
+            
+        }
+        .main-top-container{
+            width: 100%;
+            height: 3.45rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            
+        }
+        .arrow{
+            background-color: white;
+            height: 15px;
+            width: 4px;
+            border:solid white 2px;
+           
+            clip-path: polygon(75% 0, 100% 50%, 75% 100%, 0 100%, 25% 50%, 0% 0%); 
+            transform: rotate(180deg);
+            margin-left: 2rem;
+        }
+        .header-image{
+            height: 30px;
+            width: 30px;
+            border-radius: 100%;
+            border: solid 2px white;
+        }
+        .header-text{
+            color: white;
+            font-weight: 550;
+            font-size: 1rem;
+        }
+        .header-para{
+            color: white;
+            font-size: 0.75rem;
+        }
+        .dot{
+            display: flex;
+            gap: 0.1rem;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 15px;
+            height: 4.45rem;
+            margin-left: 5.5rem;
+        }
+        .item{
+            height: 3px;
+            width: 3px;
+            background-color: white;
+            border-radius: 100%;
+            
+        }
+        .text-chat{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 0.7rem;
+            height: 35px;
+            width: 60%;
+            background-color: rgb(234, 212, 212);
+            border-radius: 10px;
+            color: blueviolet;
+            font-size: 0.7rem;
+        }
+        .image-text{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 0.4rem;
+            border-radius: 10px;
+            
+        }
+        .dog-image{
+            margin-right: 0.6rem;
+        }
+        
+        .dog{
+            margin-right: 0.3rem;
+            height: 40px;
+            width: 40px;
+            border-radius: 10px;
+        }
+        .first-text{
+            margin-right: 0.7rem;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background-color: white;
+            height: 35px;
+            width: 60%;
+            border-radius: 10px;
+            font-size: 0.78rem;
+        }
+        .second-text{
+            margin-right: 0.7rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            height: 25px;
+            width: 35%;
+            border-radius: 10px;
+            font-size: 0.8rem;
+        }
+        .more-text{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 0.7rem;
+            height: 45px;
+            width: 60%;
+            background-color: rgb(234, 212, 212);
+            border-radius: 10px;
+            color: blueviolet;
+            font-size: 0.7rem;
+        }
+        .input-container{
+            margin: 0.7rem;
+            background-color: blueviolet;
+            height: 37px;
+            width:72%;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 1rem
+        }
+        .input{
+            color: white;
+            font-size: 0.88rem;
+        }
+        .radio1{
+            height: 24px;
+            width: 40px;
+        }
+        .doller1{
+            padding-left: 1.5rem;
+            color: white;
+            font-weight: bold;
+        }
+        .doller2{
+            padding-left: 2.8rem;
+            color: white;
+            font-weight: bold;
+        }
+        #text-writing{
+            height: 35px;
+            width: 75%;
+            padding: 0.6rem;
+            border-radius: 20px;
+            border: none;
+            resize: none; 
+        }
+        .writing{
+            display: flex;
+            align-items: center;
+            height: 35px;
+            width: 90%;
+            background-color: white;
+            margin-left: 1rem;
+            margin-top: 0.9rem;
+            border-radius: 20px;
+        }
+        .arrow2{
+            height: 30px;
+            width: 30px;
+            border-radius: 30px;
+            margin-left: 2.1rem;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="cards">
+
+            <header class="top-container">
+                <div class="white-container"></div>
+
+                <div class="main-top-container">
+                    <div class="arrow"></div>
+                    <img src="./humen.jpg" alt="logo" class="header-image">
+                    <div class="text">
+                        <span class="header-text">Samuel Green</span>
+                        <p class="header-para">Available to Wait</p>
+                    </div>
+                    <div class="dot">
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="chat">
+                <div class="text-chat">
+                    That sounds, great. I'd be happy with that
+                </div>
+                <div class="text-chat">
+                    Could you send over some pictures of you dog. please?
+                </div>
+            </div>
+
+            <div class="image-text">
+                <div class="dog-image">
+                    <img src="./PHOTO-2025-09-07-16-05-40.jpg" alt="pic" class="dog">
+                    <img src="./PHOTO-2025-09-07-16-06-02.jpg" alt="pic" class="dog">
+                    <img src="./PHOTO-2025-09-07-16-06-26.jpg" alt="pic" class="dog">
+                </div>
+                <div class="first-text">
+                    Here are a few pictures. She's a happy girl!
+                </div>
+                <div class="second-text">
+                    Cane you make it?
+                </div>
+            </div>
+            <div class="more-text">
+                she looks so happy: The time we discussion woeks. How lond shall I take her out for?
+            </div>
+            <div class="input-container">
+                <input style = "accent-color: blueviolet;" checked type="radio" id="money" class="radio1">
+                <label for="money" class="input">30 minute walk </label>
+                <span class="doller1">$29</span>
+            </div>
+            <div class="input-container">
+                <input  style = "accent-color: blueviolet;" checked type="radio" id="money" class="radio1">
+                <label for="money" class="input">1 hour walk</label>
+                <span class="doller2">$49</span>
+            </div>
+            <div class="writing">
+                <textarea  name="text" id="text-writing" placeholder="Type a message....."></textarea>
+                <img src="./arrow.jpg" alt="logo" class="arrow2">
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

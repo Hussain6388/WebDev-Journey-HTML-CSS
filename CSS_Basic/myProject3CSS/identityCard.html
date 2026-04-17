@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identity Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 550px;
+            width: 400px;
+            border: solid 2px hsla(0, 74%, 43%, 0.975);;
+            margin: 4rem;
+        }
+        .header-container{
+            width: 100%;
+            height: 60px;
+            background-color: hsla(0, 74%, 43%, 0.975);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .header-container h3{
+            font-size: 1.3rem;
+            color: white;
+        }
+        .image-logo{
+            height: 45px;
+            width: 44px;
+            margin-left: 0.5rem;
+        }
+        .middle-part{
+            height: 446px;
+            width: 100%;
+            background-color:white;
+           margin-top: 0;
+           display: flex;
+           
+           align-items: center;
+           flex-direction: column;
+           gap: 1rem;
+        }
+        .image{
+            height: 70px;
+            width: 70px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        .scanner{
+            height: 60px;
+            width: 60px;
+        }
+        .card-name{
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+        .text{
+            font-size: 1rem;
+            font-weight: lighter;
+            color: rgb(79, 70, 70);
+        }
+    .number{
+        display: flex;
+        gap: 0.5rem;
+        font-weight: bold;
+    }
+    .scanner{
+        margin-top: 3.5rem;
+    }
+    .footer{
+        height: 40px;
+        width: 100%;
+        background-color:hsla(0, 74%, 43%, 0.975); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-container">
+                <img src="./PHOTO-2025-09-09-14-02-16.jpg" alt="logo" class="image-logo">
+                <h3>TECHNOCRATS INSTITUTE OF TECHNOLOGY & SCIENCE</h3>
+            </div>
+        </header>
+        <div class="middle-part">
+           
+                <h3 class="card-name">IDENTITY CARD</h3>
+                <img src="./PHOTO-2025-09-09-23-30-10.jpg" alt="photo" class="image">
+                <h4 class="name">Esrail Ali</h4>
+                <p class="text">Bachlor of Technology</p>
+                <p class="text">Computer Science and Engineering</p>
+                <div class="number">Mob: <p class="text">6388963645</p></div>
+                <div class="number">Enroll:  <p class="text">0192CS231076</p></div>
+                <img src="./PHOTO-2025-09-09-14-01-41.jpg" alt="scanner" class="scanner">   
+            
+
+
+        </div>
+        <div class="footer">
+            <h3>UNBEATABLE PLACEMENT</h3>
+        </div>
+       
+    </div>
+</body>
+</html>
