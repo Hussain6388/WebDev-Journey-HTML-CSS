@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+
+        }
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            border: solid rgb(20, 197, 20) 2px;
+            border-radius: 5px;
+            height: 460px;
+            width: 460px;
+            padding: 1.5rem;
+            
+        }
+        .item{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(143, 133, 133);
+            font-size: 2rem;
+            height: 100px;
+            width: 100px;
+            border: solid black 2px;
+            border-radius: 5px;
+            margin: 0.9rem;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cards">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+            <div class="item">H</div>
+            <div class="item">I</div>
+        </div>
+    </div>
+</body>
+</html>

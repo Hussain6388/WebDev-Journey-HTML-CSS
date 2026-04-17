@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       background-color: azure;
+       height: 500px;
+       width: 500px;
+       
+    }
+    .dibba{
+        background-color: aqua;
+        height: 200px;
+        width: 200px;
+    }
+    .box{
+        background-color: red;
+        height: 200px;
+        width: 200px;
+        
+        /* clip-path: inset(20px 30px 27px 30px round 1px 2px 7px 10px); */
+        clip-path: path("M 10,40 L 70,40 A 10,10 0,0,0 80,30 L 80,10 A 10,10 0,0,1 90,0 L 140,0 A 10,10 0,0,1 150,10 L 150,190 A 10,10 0,0,1 140,200 L 10,200 A 10,10 0,0,1  0,190 L 0,50 A 10,10 0,0,1 10,40 Z");
+        /* clip-path: path("M 0,200 L 0,75 A 5,5 0,0,1 150,75 L 200 200 z"); */
+        
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="dibba">
+            <div class="box">
+
+        </div>
+        </div>
+    </div>
+</body>
+</html>
